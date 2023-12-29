@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Android Master</string>
+    <string name="push_me">push me</string>
 </resources>
