@@ -1,4 +1,4 @@
-package com.armandosalazar.androidmaster
+package com.armandosalazar.androidmaster.syntax
 
 // Global Variables
 const val globalName = "Armando Salazar" // const is a compile-time constant like static in Java

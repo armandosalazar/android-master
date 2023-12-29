@@ -1,4 +1,4 @@
-package com.armandosalazar.androidmaster
+package com.armandosalazar.androidmaster.syntax
 
 fun main() {
     val name: String? = null
