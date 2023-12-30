@@ -15,4 +15,9 @@
         android:text="Greetings" />
 
 
+    <Button
+        android:id="@+id/btnIMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IMC app" />
 </LinearLayout>
