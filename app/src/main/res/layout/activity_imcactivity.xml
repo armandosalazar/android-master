@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_app"
     android:paddingHorizontal="16dp"
     android:paddingVertical="32dp"
     tools:context=".imc.IMCActivity">
@@ -29,6 +30,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
+                android:contentDescription="@string/male"
                 android:src="@drawable/ic_male" />
 
             <TextView
@@ -61,6 +63,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
+                android:contentDescription="@string/female"
                 android:src="@drawable/ic_female" />
 
             <TextView
