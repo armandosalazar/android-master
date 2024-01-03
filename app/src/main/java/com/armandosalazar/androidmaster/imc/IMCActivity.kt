@@ -37,5 +37,20 @@ class IMCActivity : AppCompatActivity() {
                 )
             )
         }
+
+        viewFemale.setOnClickListener {
+            viewFemale.setCardBackgroundColor(
+                resources.getColor(
+                    R.color.background_component_selected,
+                    null
+                )
+            )
+            viewMale.setBackgroundColor(
+                resources.getColor(
+                    R.color.background_component,
+                    null
+                )
+            )
+        }
     }
 }
