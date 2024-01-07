@@ -3,4 +3,5 @@
     <string name="push_me">push me</string>
     <string name="male">male</string>
     <string name="female">female</string>
+    <string name="height">Height</string>
 </resources>
