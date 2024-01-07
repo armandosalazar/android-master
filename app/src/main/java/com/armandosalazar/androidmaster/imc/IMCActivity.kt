@@ -30,14 +30,13 @@ class IMCActivity : AppCompatActivity() {
                     null
                 )
             )
-            viewFemale.setBackgroundColor(
+            viewFemale.setCardBackgroundColor(
                 resources.getColor(
                     R.color.background_component,
                     null
                 )
             )
         }
-
         viewFemale.setOnClickListener {
             viewFemale.setCardBackgroundColor(
                 resources.getColor(
@@ -45,7 +44,7 @@ class IMCActivity : AppCompatActivity() {
                     null
                 )
             )
-            viewMale.setBackgroundColor(
+            viewMale.setCardBackgroundColor(
                 resources.getColor(
                     R.color.background_component,
                     null
