@@ -8,8 +8,8 @@ import com.armandosalazar.androidmaster.R
 import com.google.android.material.slider.RangeSlider
 
 class IMCActivity : AppCompatActivity() {
-    private lateinit var viewMale: CardView
-    private lateinit var viewFemale: CardView
+    private lateinit var cardViewMale: CardView
+    private lateinit var cardViewFemale: CardView
     private lateinit var tvHeight: TextView
     private lateinit var rsHeight: RangeSlider
     private var isMale = true
@@ -19,41 +19,46 @@ class IMCActivity : AppCompatActivity() {
         setContentView(R.layout.activity_imcactivity)
 
         initComponent()
+        initUI()
         setListeners()
     }
 
     private fun initComponent() {
-        viewMale = findViewById(R.id.cardViewMale)
-        viewFemale = findViewById(R.id.cardViewFemale)
+        cardViewMale = findViewById(R.id.cardViewMale)
+        cardViewFemale = findViewById(R.id.cardViewFemale)
         tvHeight = findViewById(R.id.tvHeight)
         rsHeight = findViewById(R.id.rsHeight)
     }
 
+    private fun initUI() {
+        "${rsHeight.values[0].toInt()} cm".also { tvHeight.text = it }
+    }
+
     private fun setListeners() {
-        viewMale.setOnClickListener {
+        cardViewMale.setOnClickListener {
             isMale = true
-            viewMale.setCardBackgroundColor(
+            cardViewMale.setCardBackgroundColor(
                 resources.getColor(
                     R.color.background_component_selected,
                     null
                 )
             )
-            viewFemale.setCardBackgroundColor(
+            cardViewFemale.setCardBackgroundColor(
                 resources.getColor(
                     R.color.background_component,
                     null
                 )
             )
         }
-        viewFemale.setOnClickListener {
+        cardViewFemale.setOnClickListener {
             isMale = false
-            viewFemale.setCardBackgroundColor(
+            cardViewFemale.setCardBackgroundColor(
                 resources.getColor(
                     R.color.background_component_selected,
                     null
                 )
             )
-            viewMale.setCardBackgroundColor(
+            cardViewMale.setCardBackgroundColor(
                 resources.getColor(
                     R.color.background_component,
                     null

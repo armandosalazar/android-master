@@ -4,4 +4,7 @@
     <string name="male">male</string>
     <string name="female">female</string>
     <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="more">More</string>
+    <string name="less">Less</string>
 </resources>
